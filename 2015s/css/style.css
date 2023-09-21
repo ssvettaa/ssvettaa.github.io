@@ -1,0 +1,63 @@
+h2
+{
+    color: blueviolet;
+}
+body
+{
+    background-color: yellow;
+    margin: 0;
+    padding: 0;
+}
+footer
+{
+    background-color: chartreuse;
+    border-top: solid 4px grey;
+    padding: 10px;
+}
+header 
+{
+    background-color:aqua;
+}
+main 
+{
+    background-color: cornsilk;  
+}
+h1, h2, h3, h4, h5, h5, h6
+{
+    margin: 0;
+    text-shadow: rgb(26, 26, 26) 5px 0 10px;
+}
+ul 
+{
+    margin: 0;
+    list-style: none;
+}
+a
+{
+    text-decoration: none;
+}
+html
+{
+    margin: 0;
+    padding: 0;
+}
+.padding-text
+{
+    padding: 10px;
+}
+ol a 
+{
+    color:brown
+}
+.images 
+{
+    border: 20px solid darkgray;
+}
+button 
+{
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+    border: 2px solid rgb(177, 61, 158);
+    background-color: pink;
+}
