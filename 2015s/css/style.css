@@ -19,6 +19,7 @@ footer
     background-color: chartreuse;
     border-top: solid 4px grey;
     padding: 10px;
+    position: relative;
 }
 header 
 {
@@ -26,7 +27,8 @@ header
 }
 main 
 {
-    background-color: cornsilk;  
+    background-color: cornsilk; 
+    height: 100%;
 }
 h1, h2, h3, h4, h5, h5, h6
 {
@@ -50,10 +52,16 @@ html
 {
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100%;
 }
 .padding-text
 {
     padding: 10px;
+}
+.padding-text div
+{
+    padding-top: 140px;
 }
 li a 
 {
