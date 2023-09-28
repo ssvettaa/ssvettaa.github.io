@@ -103,3 +103,9 @@ input
     width: 50%;
     font-size: 90%;
 }
+footer 
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
