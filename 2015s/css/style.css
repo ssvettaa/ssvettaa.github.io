@@ -109,3 +109,16 @@ footer
     justify-content: space-between;
     flex-direction: row;
 }
+.wrapper /*выравнивание по горизонтали*/
+{
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgba(240, 248, 255, 0.485);
+    padding: 30px;
+}
+.flex-between-center
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
