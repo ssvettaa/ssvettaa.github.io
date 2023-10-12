@@ -12,7 +12,18 @@ body
     flex-direction: column;
     justify-content: space-between;
     flex-wrap: nowrap; 
-    align-items: stretch;
+    align-items: stretch; 
+}
+.for_index_and_summary
+{
+    background-color: yellow;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap; 
+    align-items: stretch; 
     height: 100%;
 }
 footer
@@ -186,4 +197,46 @@ margin: 0;
 .information p
 {
     margin: 5px;
+}
+.form 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    transform: translate(-50%, -50%); /*-50 с верх. левого угла как по высоте, так и по горизонтали*/
+    width: 30%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    border-radius:  50px;
+    border: 5px solid rgb(255, 42, 202);
+    padding: 20px;
+    background-color: rgb(158, 231, 136);
+
+}
+.name_email_tel_yourQuestion
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.name_email_tel_yourQuestion label 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.name_email_tel_yourQuestion label input 
+{
+    width: 50%;
+}
+
+.name_email_tel_yourQuestion label textarea 
+{
+    width: 50%;
+    
+    resize: none;
 }

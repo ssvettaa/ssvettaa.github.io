@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        function check_form()
+        {
+            console.log(document.forms[0].name.value);
+        }
+    </script>
+</head>
+<body>
+    <div class="form"> 
+        <form method="get" >
+            <div class="textQuestion"> Как Вам удобно получить ответ? </div>   
+                <div class="radiobuttons">
+                    <label for="mail">
+                        <input type="radio" name="point" id="mail">по почте
+                    </label><br>
+                    <label for="phone">
+                        <input type="radio" name="point" id="phone">по телефону
+                    </label><br>
+                    <label for="none">
+                        <input type="radio" name="point" id="none">по телефону
+                    </label><br>
+                </div>
+            <br>
+            <div>
+                <label for="theme">Укажите тему вопроса</label><br>
+                <select name="theme" id="theme">
+                    <option value="work">работа</option>
+                    <option value="cooperation">сотрудничество</option>
+                    <option value="personal">личное</option>
+                </select>
+            </div>
+            <br>
+            <div class="textQuestion"> И еще один вопрос? </div>
+                <div class="checkbox">
+                    <label for="chb1">
+                        <input type="checkbox" name="chb1" id="chb1">может так
+                    </label><br>
+                    <label for="chb2">
+                        <input type="checkbox" name="chb2" id="chb2">или не так
+                    </label><br>
+                    <label for="chb3">
+                        <input type="checkbox" name="chb3" id="chb3">иначе
+                    </label><br>
+                </div>
+            <br>
+            <div class="name_email_tel_yourQuestion">
+                <label for="yourName">Введите ваше имя
+                <input type="text" name="yourName" id="yourName" size="30" pattern="[a-z]+"required>
+                </label>
+                <label for="email">Адрес почты
+                <input type="email" name="email" id="email">
+                </label>
+            
+                <label for="tel">Номер телефона
+                <input type="tel" name="tel" id="tel">
+                </label>
+                <br>
+                <label>Ваш вопрос:
+                <textarea rows="10"></textarea>
+                </label>
+            </div>
+        </form>
+        <br>
+        <button onclick="check_form()"> Проверить </button>
+    </div>
+</body>
+</html>
