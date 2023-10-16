@@ -8,23 +8,50 @@
     <script>
         function check_form()
         {
-            console.log(document.forms[0].name.value);
+            console.log("Привет! " + document.forms[0].elements.yourName.value);
+            console.log("Проверьте контактные данные: ")
+            console.log("Ваша почта " + document.forms[0].elements.email.value);
+            console.log("Номер телефона " + document.forms[0].elements.tel.value);
+
+            console.log("Ответ вы получите: ")
+            for(i=0; i<document.forms[0].elements.point.length; i++) 
+            {
+                if(document.forms[0].elements.point[i].checked) 
+                {
+                    console.log(document.forms[0].elements.point[i].value)
+                }
+            }
+
+            console.log("Тема вопроса: ")
+            index = document.forms[0].elements.theme.selectedIndex;
+            console.log(document.forms[0].elements.theme[index].text);
+            console.log("или");
+            console.log(document.forms[0].elements.theme[index].value);
+            
+            
+            console.log("еще один вопрос: ")
+            if(document.forms[0].elements.chb1.checked)
+            { console.log( document.forms[0].elements.chb1.value) } 
+            if(document.forms[0].elements.chb2.checked) 
+            { console.log( document.forms[0].elements.chb2.value) }
+            if (document.forms[0].elements.chb3.checked)
+            { console.log( document.forms[0].elements.chb3.value) }
         }
     </script>
 </head>
 <body>
     <div class="form"> 
-        <form method="get" >
+        <form method="get" name="myForm" >
             <div class="textQuestion"> Как Вам удобно получить ответ? </div>   
                 <div class="radiobuttons">
                     <label for="mail">
-                        <input type="radio" name="point" id="mail">по почте
+                        <input type="radio" name="point" id="mail" value="по почте">по почте
                     </label><br>
                     <label for="phone">
-                        <input type="radio" name="point" id="phone">по телефону
+                        <input type="radio" name="point" id="phone" value="по телефону">по телефону
                     </label><br>
                     <label for="none">
-                        <input type="radio" name="point" id="none">по телефону
+                        <input type="radio" name="point" id="none" value="не нужно">не нужно
                     </label><br>
                 </div>
             <br>
@@ -40,13 +67,13 @@
             <div class="textQuestion"> И еще один вопрос? </div>
                 <div class="checkbox">
                     <label for="chb1">
-                        <input type="checkbox" name="chb1" id="chb1">может так
+                        <input type="checkbox" name="chb1" id="chb1" value="может так">может так
                     </label><br>
                     <label for="chb2">
-                        <input type="checkbox" name="chb2" id="chb2">или не так
+                        <input type="checkbox" name="chb2" id="chb2" value="или не так">или не так
                     </label><br>
                     <label for="chb3">
-                        <input type="checkbox" name="chb3" id="chb3">иначе
+                        <input type="checkbox" name="chb3" id="chb3" value="иначе">иначе
                     </label><br>
                 </div>
             <br>
@@ -67,7 +94,6 @@
                 </label>
             </div>
         </form>
-        <br>
         <button onclick="check_form()"> Проверить </button>
     </div>
 </body>
