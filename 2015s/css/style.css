@@ -205,11 +205,12 @@ margin: 0;
     align-items: center;
     position: absolute;
     transform: translate(-50%, -50%); /*-50 с верх. левого угла как по высоте, так и по горизонтали*/
-    width: 30%;
-    height: 80%;
+    width: 300px;
+    height: 500px;
     top: 50%;
     left: 50%;
     border-radius:  50px;
+    box-shadow: 3px 3px red, -1em 0 .4em olive;
     border: 5px solid rgb(255, 42, 202);
     padding: 20px;
     background-color: rgb(158, 231, 136);
