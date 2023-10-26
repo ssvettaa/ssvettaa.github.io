@@ -210,7 +210,7 @@ margin: 0;
     top: 50%;
     left: 50%;
     border-radius:  50px;
-    box-shadow: 3px 3px red, -1em 0 .4em olive;
+    box-shadow: 3px 3px rgba(25, 0, 255, 0.448), -1em 0 .4em olive;
     border: 5px solid rgb(255, 42, 202);
     padding: 20px;
     background-color: rgb(158, 231, 136);
@@ -240,4 +240,25 @@ margin: 0;
     width: 50%;
     resize: none;
 }
+.sizeButton 
+{
+display: flex;
+flex-direction: row;
+justify-content: center;
+margin-top: 10px;
 
+}
+.styleButton 
+{
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+    border: 2px solid rgb(22 116 92);
+    background-color: rgb(186, 226, 127);
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 70%);
+    width: 130px;
+    height: 65px;
+    margin-left: 15px;
+    top: 50px;
+    left: 50px;
+}
