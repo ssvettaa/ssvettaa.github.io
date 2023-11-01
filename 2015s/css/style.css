@@ -262,3 +262,21 @@ margin-top: 10px;
     top: 50px;
     left: 50px;
 }
+.ButtonForm 
+{
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+    margin-left: 15px;
+}
+.no_select 
+{
+    border: solid 1px red;
+}
+.select
+{
+    
+    border:solid 1px red;
+}

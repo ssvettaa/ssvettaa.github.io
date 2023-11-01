@@ -37,6 +37,13 @@
             if (document.forms[0].elements.chb3.checked)
             { console.log( document.forms[0].elements.chb3.value) }
         }
+    
+    let area = document.getElementById('area')
+    area.value = localStorage.getItem('area');
+    area.oninput = () => 
+    {
+        localStorage.setItem('area', area.value)
+    };
     </script>
 </head>
 <body>
@@ -90,12 +97,24 @@
                 </label>
                 <br>
                 <label>Ваш вопрос:
-                <textarea cols="20"></textarea> 
+                <textarea id="area" cols="20" placeholder="Напишите сообщение здесь"></textarea>
+                <br>
+                <button class="ButtonForm" onclick="localStorage.removeItem('area');area.value=''">Очистить</button>
+                <script>
+                
+                    area.value = localStorage.getItem('area');
+                    area.oninput = () => 
+                    {
+                        localStorage.setItem('area', area.value)
+                    };
+                </script> 
             </label>
             <br>
-            </div>
-        </form>
-        <button onclick="check_form()"> Проверить </button>
+        </div>
+    </form>
+    <div class="ButtonForm">
+        <button onclick="check_form()"> Проверить </button><br>
+    </div>
     </div>
 </body>
 </html>

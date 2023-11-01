@@ -6,9 +6,35 @@
     <link rel="stylesheet" href="css/style.css">
     <title>2015Document</title>
 </head>
-<body class="for_index_and_summary">
-    <script>myf();</script>
-    <header>
+<body class="for_index_and_summary" class="no_select">
+    <script>
+        myf();
+        click = document.getElementById('TextColor')
+        
+        function f() 
+        {
+            event.target.classList.add("select");
+        }
+        let list_no_select = Array.from(document.getElementsByClassName("no_select"));
+        list_no_select.forEach((element) => {
+            element.addEventListener("click", f);
+        });
+        function clickColor() 
+        {
+            // click = document.getElementById('TextColor');
+            click.style.backgroundColor = 'red';
+
+            /*if (click.style.color=='black') {
+                click.style.color='red'
+            }
+            if (click.style.color=='red') {
+                click.style.color='black'
+            }
+            console.log(click.style.color)
+            */
+        }
+        </script>
+    <header class="no_select">
         
         <div class="wrapper"> 
         <h2>Веб-технологии</h2>
@@ -29,7 +55,7 @@
     </header>
     <main class="padding-text wrapper" >
         <div class="wrapper">
-        <h1>Добро пожаловать!</h1>
+        <h1 id="TextColor" onclick="clickColor()">Добро пожаловать!</h1>
         <div>
     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam illo officiis vero, quos magni perferendis, voluptatem odit incidunt commodi nisi molestias cum nulla sed, optio reiciendis expedita itaque? Expedita, a!
     
@@ -50,6 +76,6 @@
         </div>
         </div>
     </footer>
-    
+
 </body>
 </html>
