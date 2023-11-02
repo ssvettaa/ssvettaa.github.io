@@ -7,10 +7,10 @@
     <title>2015Document</title>
 </head>
 <body>
-    <header class="no_select" >
+    <header>
         <div class="wrapper"> 
-        <h2 class="no_select">Веб-технологии</h2>
-        <div class="no_select">
+        <h2>Веб-технологии</h2>
+        <div>
             <img src="images/logo.jpg" alt="логотип" width="150">
         </div>
         <nav>
@@ -26,9 +26,9 @@
         </div>
     </header>
     <main class="wrapper" >
-        <div class="wrapper" class="no_select"> 
-            <h1 class="no_select">Программа</h1>
-            <div class="program" class="no_select">
+        <div class="wrapper"> 
+            <h1 >Программа</h1>
+            <div class="program" >
                 <article >
                     <div class="information">
                         <h5>9:00-10:30</h5>
@@ -97,7 +97,7 @@
             </div>
         </div>
     </main>
-    <footer class="no_select">
+    <footer>
         <div class="wrapper flex-between-center"> 
             <h6> Еремина С. А.</h6>
             <div>
@@ -111,17 +111,30 @@
         </div>
     </footer>
     <script>
-        function f()
+        // function f()
+        // {
+        //     event.target.classList.add("select");
+        // }
+
+        // // document.getElementsByClassName("no_select")[0].addEventListener("click", f);
+       
+        // let list_no_select = Array.from(document.getElementsByClassName("no_select"));
+        // list_no_select.forEach((element) => {
+        //     element.addEventListener("click", f);
+        // });  
+        
+        function addSelect() 
         {
-            event.target.classList.add("select");
+            arr.forEach((item) => {
+                item.classList.remove("no_select")
+            });
+            event.target.classList.add("no_select");
         }
 
-        // document.getElementsByClassName("no_select")[0].addEventListener("click", f);
-       
-        let list_no_select = Array.from(document.getElementsByClassName("no_select"));
-        list_no_select.forEach((element) => {
-            element.addEventListener("click", f);
-        });    
+        let arr = Array.from(document.getElementsByTagName("*"));
+        arr.forEach((item) => {
+            item.addEventListener('click', addSelect)
+        });
     </script>
 </body>
 </html>

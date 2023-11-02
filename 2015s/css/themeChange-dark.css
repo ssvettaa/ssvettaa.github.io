@@ -1,0 +1,110 @@
+h2
+{
+    color: rgb(53, 18, 87);
+}
+body
+{
+    background-color: rgb(0, 0, 0);
+   
+}
+.for_index_and_summary
+{
+    background-color: rgb(0, 0, 0);
+    
+}
+footer
+{
+    background-color: rgb(0, 0, 0);
+    border-top: solid 4px grey;
+    
+}
+header 
+{
+    background-color:rgb(0, 0, 0);
+}
+
+main 
+{
+    background-color: rgb(31, 31, 31); 
+
+}
+h1, h2, h3, h4, h5, h5, h6
+{
+    text-shadow: rgb(225, 225, 225) 5px 0 10px;
+}
+
+li a 
+{
+    color:rgb(58, 13, 13)
+}
+.images 
+{
+    border: 20px solid rgb(32, 32, 32);
+}
+button 
+{
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(84, 24, 74);
+    background-color: rgb(124, 87, 93);
+}
+.for-form
+{
+    background-color: rgba(9, 40, 1, 0.718);
+}
+
+.program article 
+{
+    background: #000000;
+}
+.program article h5
+{
+    color:rgb(70, 23, 62);
+}
+
+.author p
+{
+    color: rgba(254, 254, 254, 0.629);
+}
+.form 
+{
+    box-shadow: 3px 3px rgba(4, 0, 41, 0.448), -1em 0 .4em olive;
+    border: 5px solid rgb(62, 10, 49);
+    background-color: rgb(32, 47, 27);
+}
+
+.styleButton 
+{
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(4, 22, 18);
+    background-color: rgb(33, 42, 20);
+    box-shadow: 0px 5px 10px 0px rgba(255, 255, 255, 0.7);
+}
+.ButtonForm 
+{
+    color: rgb(255, 255, 255);
+}
+.no_select 
+{
+    border: solid 1px rgb(80, 0, 0);
+}
+.select
+{
+    
+    border:solid 1px rgb(80, 0, 0);
+}
+
+.theme
+{
+
+    background: rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.change-theme[data-theme="dark"]
+{
+    display: none;
+}
+.change-theme[data-theme="light"]
+{
+    display: block;
+}
