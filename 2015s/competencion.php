@@ -119,7 +119,7 @@
             </script>
         </div>
     </main>
-    <?php include(''); ?>
+    <?php include('footer.html'); ?>
     <script>
         // function f()
         // {
